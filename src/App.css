@@ -1,0 +1,284 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* navbar styling */
+
+.navbar-container {
+  background-color: #F55A5A;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: auto;
+  padding-block: 18px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.navbar-container img {
+  margin-inline-end: 10px;
+  height: 48px;
+}
+
+
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-block: 50px;
+  padding-inline: 80px;
+
+
+}
+
+
+.card-main {
+  /* flex allows css below allows to only have 2 columns per row */
+  flex: 1 1 46%;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  margin-block: 20px;
+  padding: 30px;
+  
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.card-content img {
+  object-fit: cover;
+  object-position: center;
+  height: 300px;
+  width: 200px;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.card-container {
+  align-items: center;
+  padding-inline: 30px;
+  padding-block-start: 40px;
+}
+
+/* pin icon sizing */
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:left;
+}
+
+.card-header img {
+  height: 20px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.card-header > h3 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-inline-end: 20px;
+}
+
+.card-header a {
+  font-size: 13px;
+  color: grey;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.card-title {
+
+  font-size: 23px;
+  padding-block-start: 20px;
+  padding-block-end: 10px;
+}
+
+.card-title h2 {
+  line-height: 1em;
+}
+
+
+.card-description h4 {
+  padding-block-start: 20px;
+  padding-block-end: 10px;
+}
+
+.card-description p {
+  width: 95%;
+  text-justify:auto;
+
+}
+
+/* mobile sizing */
+
+@media only screen and (min-width: 300px) and (max-width: 760px){
+  .content-container {
+    padding-inline: 5px;
+    flex-direction: column;
+    padding-block: 5px;
+  }
+
+  .card-main {
+    margin-block: 20px;
+    padding-inline: 10px;
+    padding-block: 30px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 20px;
+  }
+
+  .card-title {
+    font-size: 23px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  
+
+  .card-description p {
+    font-size: 14px;
+  }
+
+  .card-description h4 {
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+  }
+}
+
+/* tablet sizing */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .content-container {
+    padding-inline: 5px;
+    padding-block: 5px;
+
+  }
+
+  .card-main {
+    margin-block: 20px;
+    padding-inline: 10px;
+    padding-block: 30px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 20px;
+  }
+
+  .card-title {
+    font-size: 23px;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-description {
+    align-items: center;
+  }
+
+  .card-description p {
+    font-size: 14px;
+  }
+
+  .card-description h4 {
+
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+  }
+
+  .card-header a {
+    font-size: 12px;
+  }
+
+  .card-header h3 {
+    font-size: 16px;
+    padding-inline-end: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .card-title {
+  
+    font-size: 22px;
+    padding-block-start: 20px;
+    padding-block-end: 10px;
+  }
+}
+
+@media (min-width: 1025px ) and (max-width: 1280px) {
+
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-block: 50px;
+    padding-inline: 50px;
+  
+  }
+
+  .card-main {
+    /* flex allows css below allows to only have 2 columns per row */
+    flex: 1 0 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin-block: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    align-items: center;
+  }
+
+  .card-title h2 {
+    font-size: 24px;
+  }
+
+  .card-description p {
+    font-size: 14px;
+  }
+
+  .card-header a {
+    font-size: 11px;
+  }
+  
+  .card-header h3 {
+    font-size: 16px;
+    padding-inline-end: 10px;
+    letter-spacing: 1px;
+  }
+
+
+
+}
+
+
+
+   
